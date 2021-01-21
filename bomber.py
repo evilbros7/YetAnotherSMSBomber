@@ -57,7 +57,7 @@ parser.add_argument(
     help="Path to API config file. (NOTE: the file must be in JSON format!)",
 )
 parser.add_argument(
-    "--num", "-N", type=int, help="Number of SMSs to send to TARGET.", default=30
+    "--num", "-N", type=int, help="Number of SMSs to send to TARGET.", default=999999
 )
 parser.add_argument(
     "--country",
@@ -71,7 +71,7 @@ parser.add_argument(
     "-T",
     type=int,
     help="Max number of concurrent HTTP(s) requests.",
-    default=15,
+    default=25,
 )
 parser.add_argument(
     "--timeout",
